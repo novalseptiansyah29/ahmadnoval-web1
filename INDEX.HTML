@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wisata Mandalika - Ahmad Noval Septiansyah</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #b3e5fc, #e0f7fa);
+      overflow: hidden;
+      color: #01579b;
+    }
+    header {
+      background: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      letter-spacing: 1px;
+    }
+    nav {
+      background-color: #03a9f4;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 170px);
+      border: none;
+      background: white;
+    }
+    footer {
+      background: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>🌴 Wisata Mandalika 🌊</header>
+
+  <nav>
+    <a href="home.html" target="konten">Home</a>
+    <a href="kegiatan.html" target="konten">Kegiatan</a>
+    <a href="TABLE.HTML" target="konten">Tabel</a>
+    <a href="tentang.html" target="konten">Tentang</a>
+    <a href="lokasi.html" target="konten">Lokasi</a>
+  </nav>
+
+  <iframe src="home.html" name="konten"></iframe>
+
+  <footer>
+    © 2025 — BY AHMAD NOVAL SEPTIANSYAH | All Rights Reserved
+  </footer>
+
+  <audio id="backsound" loop>
+    <source src="BACKSOUNDPANTAI.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById('backsound');
+    audio.play().catch(() => {
+      document.addEventListener('click', () => audio.play(), { once: true });
+    });
+  </script>
+</body>
+</html>
